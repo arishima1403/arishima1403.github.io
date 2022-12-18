@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- 1. Link berfungsi untuk memberikan css, serta menghubungkan html dengan googleapis (untuk mengubah font) -->
+    <link rel="stylesheet" href="./CSS AND JS/style.css" />
+    <link rel="stylesheet" href="./CSS AND JS/media-screen.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- 2. nav digunakan untuk membuat tombol navigasi pada bagian atas halaman. Link link yang ada pada navbar (navigasi bar) digunakan untuk mengarahkan pengguna yang memencetnya ke halamman yang dituju. -->
+    <nav>
+      <div class="logo">
+        <!-- 3. span digunakan untuk membuat elemen yang dapat diberi style berbeda dari yang tidak di span. (Warna pada logo Four dan Snakcs berbeda) -->
+        <a href="./Home.html">Four<span>Snacks</span></a>
+      </div>
+      <ul>
+        <li><a href="./Home.html">Home</a></li>
+        <li><a href="./Menu.html">Menu</a></li>
+        <li>
+          <button class="dropdown">Food</button>
+          <div class="dropdown-content">
+            <a href="./Permen.html">Permen</a>
+            <a href="./Pudding.html">Pudding</a>
+            <a href="./buah.html">Buah-buahan</a>
+            <a href="./others.html">Others...</a>
+          </div>
+        </li>
+        <li>
+          <button class="dropdown">
+            Drink
+            <div class="dropdown-content">
+              <a href="./Jambu.html">Jus Jambu</a>
+              <a href="./Esbatu.html">Es Batu</a>
+            </div>
+          </button>
+        </li>
+        <li><a href="./About.html">About Us</a></li>
+        <li><a href="./Review.html">Review</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+      <!-- 4. Digunakan untuk membuat menu pada navbar berpindah menjadi di samping halaman dan kumpulan link tadi berubah bentuknya menjadi garis 3. Ini bekerja saat ukuran layar berada dibawah 576px -->
+      <div class="menu-hamburger">
+        <input type="checkbox" name="" id="" />
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+
+    <!-- 5. Digunakan untuk membuat main konten pada halaman. Section disini berfungsi sebagai elemen induk yang digunakan untuk membungkus element anak dan mengaturnya sesuai dengan pengaturan yang disetting pada cssnya-->
+    <section>
+      <div class="container">
+        <h1>FOURSNACKS</h1>
+        <h3>Our website is just a project HTML CSS website. In here you can find cheap traditional snacks like jus jambu, tape, pudding, etc.</h3>
+        <!-- 6. Button disini berfungsi untuk mengarahkan website ke halaman menu. -->
+        <a href="./Menu.html"><button class="btn">Let's Get Started</button></a>
+      </div>
+    </section>
+
+    <!-- 7.  Berfungsi untuk membuat footer pada halaman html yang isinyua logo sosmed, copyright, serta beberapa halaman yang bersangkutan yang dipilih. -->
+    <footer>
+      <ul class="footer-icons">
+        <li>
+          <a href="#"><i class="fa-brands fa-whatsapp" style="color: #075e54"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-telegram" style="color: #0088cc"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-instagram" style="color: #fd1d1d"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-envelope" style="color: #993955"></i></a>
+        </li>
+      </ul>
+      <!-- 8. Digunakan untuk membuat menu link yang dapat diakses menuju link yang bersangkutan. -->
+      <ul class="footer-menu">
+        <li><a href="./Home.html">Home</a></li>
+        <li><a href="./Menu.html">Menu</a></li>
+        <li><a href="./About.html">About</a></li>
+        <li><a href="./review.html">Review</a></li>
+      </ul>
+      <!-- 9. Digunakann untuk -->
+      <div class="footer-copyright">
+        <p>Copyright © 2022 A11.4101 KELOMPOK 4. All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <!-- 10. Digunakan untuk menghubungkan halaman dengan javascript -->
+    <script src="./CSS AND JS/script.js"></script>
+  </body>
+</html>
